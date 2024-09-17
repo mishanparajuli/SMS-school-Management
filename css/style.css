@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media(min-width: 992px) {
+    .navigation .navbar-brand {
+        padding-right: 10% !important;
+    }
+}
+
+
+.navigation .main-nav li {
+    padding-right: 2rem;
+}
+
+@media (min-width: 992px) {
+    #calendar {
+        width: 80%;
+    }
+}
+
+/* when not active use specificity to override the !important on border-(color) */
+.nav-tabs .nav-link:not(.active) {
+    border-color: transparent !important;
+}
+
+#more {
+    display: none;
+}
+
+
+/* login style start*/
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.h-custom {
+  height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}
+/* login style end */
+
+
+.footerBottom{
+  bottom: 0;
+  position: fixed;
+}
